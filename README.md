@@ -7,7 +7,8 @@ AchievementManager am = new AchievementManager();
 
 ```
 // Define properties based on a "name", "initial value", "condition" and "unlock value"
-// Example: Consider property labled, "money1". Initial value of "0" when it reaches or exceeds a value of "1" the propery will be considered unlocked.
+// Example: Consider property labled, "money1". Initial value of "0" when it reaches or exceeds a value of "1"
+// the propery will be considered unlocked.
 am.defineProperty("money1", 0, AchievementManager.ACTIVE_IF_GREATER_THAN, 1);
 am.defineProperty("money10", 2, AchievementManager.ACTIVE_IF_GREATER_THAN, 10);
 am.defineProperty("money100", 11, AchievementManager.ACTIVE_IF_GREATER_THAN, 100);
@@ -25,7 +26,7 @@ Achievements.ml4.add(am.getValue("money10000"));
 // Define achievement based on a "name", "description" and an ArrayList
 // Once all propoerties in the ArrayList have met there conditions, the achievement is considered unlocked.
 am.defineAchievement("achievemoney1", "You never forget your first dollar.", Achievements.ml0); // Get 1 gold through auto clickers
-am.defineAchievement("achievemoney10", "Drinks are on me.", Achievements.ml1); // Get 1 gold through auto clickers
+am.defineAchievement("achievemoney10", "Drinks are on me.", Achievements.ml1); // Get 10 gold through auto clickers
 am.defineAchievement("achievemoney100", "Steak or lobster, because dinner is on me.", Achievements.ml2); // Get 100 gold through auto clickers
 am.defineAchievement("achievemoney1000", "Making it rain.", Achievements.ml3); //Get 1000 gold through auto clickers
 am.defineAchievement("achievemoney10000", "The sky's the limit.", Achievements.ml4); // Get 10000 gold through auto clickers
